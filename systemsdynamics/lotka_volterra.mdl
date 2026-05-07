@@ -1,0 +1,60 @@
+{UTF-8}
+Prey = INTEG(prey_births - predation, 20)
+~  animals
+~  |
+
+Predator = INTEG(pred_births - pred_deaths, 5)
+~  animals
+~  |
+
+alpha = 0.8
+~  1/year
+~  Prey birth rate
+~  |
+
+beta = 0.1
+~  1/(year*animals)
+~  Predation rate
+~  |
+
+delta = 0.07
+~  dimensionless
+~  Predator conversion efficiency
+~  |
+
+gamma = 0.6
+~  1/year
+~  Predator death rate
+~  |
+
+prey_births = alpha * Prey
+~  animals/year
+~  |
+
+predation = beta * Prey * Predator
+~  animals/year
+~  |
+
+pred_births = delta * beta * Prey * Predator
+~  animals/year
+~  |
+
+pred_deaths = gamma * Predator
+~  animals/year
+~  |
+
+FINAL TIME = 40
+~  year
+~  |
+
+INITIAL TIME = 0
+~  year
+~  |
+
+TIME STEP = 0.05
+~  year
+~  |
+
+SAVEPER = TIME STEP
+~  year
+~  |
