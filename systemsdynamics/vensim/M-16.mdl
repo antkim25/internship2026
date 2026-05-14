@@ -3,7 +3,7 @@ Result=IF THEN ELSE(X > 5, 1, 0)
 	~	
 	~		|
 
-X=7
+X = IF THEN ELSE(Time < 10, 3, 7)
 	~	
 	~		|
 

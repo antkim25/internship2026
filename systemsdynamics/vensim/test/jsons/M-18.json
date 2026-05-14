@@ -1,0 +1,133 @@
+{
+  "model_json": {
+    "abstractModel": {
+      "originalPath": "M-18_xidz.mdl",
+      "sections": [
+        {
+          "name": "__main__",
+          "type": "main",
+          "path": "/",
+          "params": [],
+          "returns": [],
+          "subscripts": [],
+          "constraints": [],
+          "testInputs": [],
+          "split": false,
+          "viewsDict": {},
+          "elements": [
+            {
+              "name": "Result",
+              "components": [
+                {
+                  "type": "Auxiliary",
+                  "subtype": "Normal",
+                  "subscripts": [
+                    [],
+                    []
+                  ],
+                  "ast": {
+                    "syntaxType": "CallStructure",
+                    "callType": "XIDZ",
+                    "arguments": [
+                      {
+                        "syntaxType": "ReferenceStructure",
+                        "reference": "A"
+                      },
+                      {
+                        "syntaxType": "ReferenceStructure",
+                        "reference": "B"
+                      },
+                      {
+                        "syntaxType": "ReferenceStructure",
+                        "reference": "Fallback"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "units": "dimensionless",
+              "limits": [
+                null,
+                null
+              ],
+              "documentation": ""
+            },
+            {
+              "name": "A",
+              "components": [
+                {
+                  "type": "Auxiliary",
+                  "subtype": "Normal",
+                  "subscripts": [
+                    [],
+                    []
+                  ],
+                  "ast": {
+                    "syntaxType": "ReferenceStructure",
+                    "reference": "10"
+                  }
+                }
+              ],
+              "units": "dimensionless",
+              "limits": [
+                null,
+                null
+              ],
+              "documentation": ""
+            },
+            {
+              "name": "B",
+              "components": [
+                {
+                  "type": "Auxiliary",
+                  "subtype": "Normal",
+                  "subscripts": [
+                    [],
+                    []
+                  ],
+                  "ast": {
+                    "syntaxType": "ReferenceStructure",
+                    "reference": "0"
+                  }
+                }
+              ],
+              "units": "dimensionless",
+              "limits": [
+                null,
+                null
+              ],
+              "documentation": ""
+            },
+            {
+              "name": "Fallback",
+              "components": [
+                {
+                  "type": "Auxiliary",
+                  "subtype": "Normal",
+                  "subscripts": [
+                    [],
+                    []
+                  ],
+                  "ast": {
+                    "syntaxType": "ReferenceStructure",
+                    "reference": "99"
+                  }
+                }
+              ],
+              "units": "dimensionless",
+              "limits": [
+                null,
+                null
+              ],
+              "documentation": ""
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "time_step": 1,
+  "initial_time": 0,
+  "final_time": 20,
+  "parameters": {}
+}

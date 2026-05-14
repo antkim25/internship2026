@@ -1,0 +1,79 @@
+{
+  "model_json": {
+    "abstractModel": {
+      "originalPath": "M-10_tan.mdl",
+      "sections": [
+        {
+          "name": "__main__",
+          "type": "main",
+          "path": "/",
+          "params": [],
+          "returns": [],
+          "subscripts": [],
+          "constraints": [],
+          "testInputs": [],
+          "split": false,
+          "viewsDict": {},
+          "elements": [
+            {
+              "name": "Result",
+              "components": [
+                {
+                  "type": "Auxiliary",
+                  "subtype": "Normal",
+                  "subscripts": [
+                    [],
+                    []
+                  ],
+                  "ast": {
+                    "syntaxType": "CallStructure",
+                    "callType": "TAN",
+                    "arguments": [
+                      {
+                        "syntaxType": "ReferenceStructure",
+                        "reference": "X"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "units": "dimensionless",
+              "limits": [
+                null,
+                null
+              ],
+              "documentation": ""
+            },
+            {
+              "name": "X",
+              "components": [
+                {
+                  "type": "Auxiliary",
+                  "subtype": "Normal",
+                  "subscripts": [
+                    [],
+                    []
+                  ],
+                  "ast": {
+                    "syntaxType": "ReferenceStructure",
+                    "reference": "0.7853981634"
+                  }
+                }
+              ],
+              "units": "dimensionless",
+              "limits": [
+                null,
+                null
+              ],
+              "documentation": ""
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "time_step": 1,
+  "initial_time": 0,
+  "final_time": 20,
+  "parameters": {}
+}

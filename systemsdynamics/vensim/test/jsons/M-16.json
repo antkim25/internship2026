@@ -1,0 +1,122 @@
+{
+  "model_json": {
+    "abstractModel": {
+      "originalPath": "M-16_if_then_else.mdl",
+      "sections": [
+        {
+          "name": "__main__",
+          "type": "main",
+          "path": "/",
+          "params": [],
+          "returns": [],
+          "subscripts": [],
+          "constraints": [],
+          "testInputs": [],
+          "split": false,
+          "viewsDict": {},
+          "elements": [
+            {
+              "name": "Result",
+              "components": [
+                {
+                  "type": "Auxiliary",
+                  "subtype": "Normal",
+                  "subscripts": [
+                    [],
+                    []
+                  ],
+                  "ast": {
+                    "syntaxType": "CallStructure",
+                    "callType": "IF_THEN_ELSE",
+                    "arguments": [
+                      {
+                        "syntaxType": "ArithmeticStructure",
+                        "operators": [
+                          "<"
+                        ],
+                        "arguments": [
+                          {
+                            "syntaxType": "ReferenceStructure",
+                            "reference": "time"
+                          },
+                          {
+                            "syntaxType": "ReferenceStructure",
+                            "reference": "10"
+                          }
+                        ]
+                      },
+                      {
+                        "syntaxType": "ReferenceStructure",
+                        "reference": "Low_Value"
+                      },
+                      {
+                        "syntaxType": "ReferenceStructure",
+                        "reference": "High_Value"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "units": "dimensionless",
+              "limits": [
+                null,
+                null
+              ],
+              "documentation": ""
+            },
+            {
+              "name": "Low_Value",
+              "components": [
+                {
+                  "type": "Auxiliary",
+                  "subtype": "Normal",
+                  "subscripts": [
+                    [],
+                    []
+                  ],
+                  "ast": {
+                    "syntaxType": "ReferenceStructure",
+                    "reference": "3"
+                  }
+                }
+              ],
+              "units": "dimensionless",
+              "limits": [
+                null,
+                null
+              ],
+              "documentation": ""
+            },
+            {
+              "name": "High_Value",
+              "components": [
+                {
+                  "type": "Auxiliary",
+                  "subtype": "Normal",
+                  "subscripts": [
+                    [],
+                    []
+                  ],
+                  "ast": {
+                    "syntaxType": "ReferenceStructure",
+                    "reference": "7"
+                  }
+                }
+              ],
+              "units": "dimensionless",
+              "limits": [
+                null,
+                null
+              ],
+              "documentation": ""
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "time_step": 1,
+  "initial_time": 0,
+  "final_time": 20,
+  "parameters": {}
+}
